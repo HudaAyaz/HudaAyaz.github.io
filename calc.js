@@ -1,13 +1,13 @@
-a = document.getElementById("display").value;
+a = document.getElementById("display");
 
 function show(e){
-    a += e;
+    a.value += e;
 }
 
 function calculate(){
-    a = eval(a);
+    a.value = eval(a.value);
 }
 
 function clearDisplay(){
-    a = '';
+    a.value = '';
 }
